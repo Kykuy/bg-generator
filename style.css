@@ -1,0 +1,44 @@
+:root {
+    font-size: 16px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(to right, #95de97 0%,#34998c 100%); 
+} 
+
+h1 {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+label {
+    text-transform: none;
+    letter-spacing: 0.1rem;
+}
+
+.output {
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.randomize {
+    padding: 10px;
+}
