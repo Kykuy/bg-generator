@@ -9,7 +9,7 @@ let button = document.querySelector('.randomize');
 // console.log(color2);
 
 function setGradient () {
-    body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")"
+    body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
 
     output.textContent = body.style.background + ';';
 }
@@ -31,12 +31,12 @@ function randomize() {
 
 function displayDefault() {
 
-    // output.textContent = getComputedStyle(body).background.split('rgba(0, 0, 0, 0)').join(' ').split('repeat scroll 0% 0% / auto padding-box border-box').join('')+';';
-
-    // these are identical, the second is preferred though
+    // output.textContent = getComputedStyle(body).background.split('rgba(0, 0, 0, 0)').join(' ').split('repeat scroll 0% 0% / auto padding-box border-box').join('')+';';    
 
     let string = getComputedStyle(body).background;
     output.textContent = string.slice(string.indexOf('linear-gradient'), string.indexOf(' repeat')) + ';';
+
+    // these are identical, the second is preferred though
 }
 
 
