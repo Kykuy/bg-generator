@@ -9,9 +9,9 @@ let button = document.querySelector('.randomize');
 // console.log(color2);
 
 function setGradient () {
-    body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+    body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value} )`;
 
-    output.textContent = body.style.background + ';';
+    output.textContent = `${body.style.background};`;
 }
 
 function getRandomColorHex() {
@@ -36,7 +36,7 @@ function displayDefault() {
     let string = getComputedStyle(body).background;
     output.textContent = string.slice(string.indexOf('linear-gradient'), string.indexOf(' repeat')) + ';';
 
-    // these are identical, the second is preferred though
+    // these are identical, the second is preferred though, faster and more concise
 }
 
 
